@@ -63,6 +63,16 @@ app.get('/', function (req, res) {
         pageTitle: "Lekcja01"
     })
 })
+
+app.get("/marcin", function (req, res) {
+    res.render("marcin")
+})
+
+app.get("/index", function (req, res) {
+    res.render("index")
+})
+
+
 app.get('/about', function (req, res) {
     res.send("My site")
 })
